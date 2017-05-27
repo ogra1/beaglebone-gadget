@@ -5,16 +5,16 @@ volumes:
     bootloader: u-boot
     schema: mbr
     structure:
-      - name: spl
+      - name: mlo
         type: bare
-        size: 51200
-        offset: 1024
+        size: 131072
+        offset: 131072
         content:
-          - image: SPL
+          - image: MLO
       - name: u-boot
         type: bare
-        size: 393216
-        offset: 70656
+        size: 786432
+        offset: 393216
         content:
           - image: u-boot.img
       - name: system-boot
