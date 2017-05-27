@@ -1,8 +1,8 @@
 diff --git a/include/configs/am335x_evm.h b/include/configs/am335x_evm.h
-index 49c14df..ea527df 100644
+index 49c14df..962fa51 100644
 --- a/include/configs/am335x_evm.h
 +++ b/include/configs/am335x_evm.h
-@@ -415,4 +415,19 @@
+@@ -415,4 +415,18 @@
  #define CLK_SYNTHESIZER_I2C_ADDR 0x65
  #endif
  
@@ -12,7 +12,6 @@ index 49c14df..ea527df 100644
 +#undef  CONFIG_ENV_IS_IN_NAND
 +#undef  CONFIG_ENV_IS_IN_MMC
 +#define CONFIG_ENV_IS_IN_FAT
-+#define CONFIG_ENV_SIZE                        (128 * 1024)
 +#define CONFIG_FAT_WRITE
 +#define FAT_ENV_INTERFACE      "mmc"
 +#define FAT_ENV_DEVICE_AND_PART        "0"
