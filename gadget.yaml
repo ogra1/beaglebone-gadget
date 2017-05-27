@@ -1,0 +1,24 @@
+device-tree: am335x-boneblack
+device-tree-origin: kernel
+volumes:
+  disk:
+    bootloader: u-boot
+    schema: mbr
+    structure:
+      - name: spl
+        type: bare
+        size: 51200
+        offset: 1024
+        content:
+          - image: SPL
+      - name: u-boot
+        type: bare
+        size: 393216
+        offset: 70656
+        content:
+          - image: u-boot.img
+      - name: system-boot
+        type: 0C
+        filesystem: vfat
+        filesystem-label: system-boot
+        size: 128M

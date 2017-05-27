@@ -1,0 +1,24 @@
+diff --git a/include/configs/am335x_evm.h b/include/configs/am335x_evm.h
+index 49c14df..ea527df 100644
+--- a/include/configs/am335x_evm.h
++++ b/include/configs/am335x_evm.h
+@@ -415,4 +415,19 @@
+ #define CLK_SYNTHESIZER_I2C_ADDR 0x65
+ #endif
+ 
++/* Save the env to the fat partition. */
++#ifndef CONFIG_SPL_BUILD
++#undef  CONFIG_ENV_IS_NOWHERE
++#undef  CONFIG_ENV_IS_IN_NAND
++#undef  CONFIG_ENV_IS_IN_MMC
++#define CONFIG_ENV_IS_IN_FAT
++#define CONFIG_ENV_SIZE                        (128 * 1024)
++#define CONFIG_FAT_WRITE
++#define FAT_ENV_INTERFACE      "mmc"
++#define FAT_ENV_DEVICE_AND_PART        "0"
++#define FAT_ENV_FILE           "uboot.env"
++#define CONFIG_SUPPORT_RAW_INITRD
++#define CONFIG_SYS_REDUNDAND_ENVIRONMENT
++#endif
++
+ #endif	/* ! __CONFIG_AM335X_EVM_H */
