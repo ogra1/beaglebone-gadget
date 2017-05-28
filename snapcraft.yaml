@@ -26,3 +26,68 @@ parts:
       - libpython2.7-dev
       - build-essential
       - bc
+
+slots:
+  gpio-20:
+    interface: gpio
+    number: 20
+  gpio-26:
+    interface: gpio
+    number: 26
+  gpio-27:
+    interface: gpio
+    number: 27
+  gpio-44:
+    interface: gpio
+    number: 44
+  gpio-45:
+    interface: gpio
+    number: 45
+  gpio-46:
+    interface: gpio
+    number: 46
+  gpio-47:
+    interface: gpio
+    number: 47
+  gpio-48:
+    interface: gpio
+    number: 48
+  gpio-49:
+    interface: gpio
+    number: 49
+  gpio-60:
+    interface: gpio
+    number: 60
+  gpio-61:
+    interface: gpio
+    number: 61
+  gpio-65:
+    interface: gpio
+    number: 65
+  gpio-66:
+    interface: gpio
+    number: 66
+  gpio-67:
+    interface: gpio
+    number: 67
+  gpio-68:
+    interface: gpio
+    number: 68
+  gpio-69:
+    interface: gpio
+    number: 69
+  gpio-112:
+    interface: gpio
+    number: 112
+  gpio-115:
+    interface: gpio
+    number: 115
+  gpio-117:
+    interface: gpio
+    number: 117
+  i2c-0:
+    interface: i2c
+    path: /dev/i2c-0
+  i2c-1:
+    interface: i2c
+    path: /dev/i2c-1

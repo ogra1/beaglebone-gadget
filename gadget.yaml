@@ -27,4 +27,4 @@ defaults:
   99T7MUlRhtI3U0QFgl5mXXESAiSwt776:
     service:
       rsyslog:
-        disabled: true
+        disable: true
