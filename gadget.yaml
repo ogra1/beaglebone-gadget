@@ -22,3 +22,9 @@ volumes:
         filesystem: vfat
         filesystem-label: system-boot
         size: 128M
+
+defaults:
+  99T7MUlRhtI3U0QFgl5mXXESAiSwt776:
+    service:
+      rsyslog:
+        disabled: true
