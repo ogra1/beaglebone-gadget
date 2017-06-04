@@ -1,7 +1,7 @@
 device-tree: am335x-boneblack
 device-tree-origin: kernel
 volumes:
-  disk:
+  beaglebone:
     bootloader: u-boot
     schema: mbr
     structure:
